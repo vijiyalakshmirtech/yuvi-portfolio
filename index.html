@@ -1,1 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>
+    Yuvaraj Ramalingam | Founder • Digital Growth Strategist • AI Creative Specialist
+  </title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: "#c4a446",
+              secondary: "#fbc400",
+              dark: "#081d52",
+              surface: "#112960",
+              border: "#655639",
+            },
+          },
+
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            display: ["Space Grotesk", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #081d52;
+      color: #d1d5db;
+      margin: 0;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .premium-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+
+      background-color: #081d52;
+
+      background-image:
+        radial-gradient(
+          circle at 50% -20%,
+          rgba(196, 164, 70, 0.15) 0%,
+          transparent 50%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(251, 196, 0, 0.08) 0%,
+          transparent 40%
+        ),
+        radial-gradient(
+          circle at 100% 100%,
+          rgba(255, 255, 255, 0.03) 0%,
+          transparent 30%
+        );
+    }
+
+    .card-premium {
+      background: rgba(17, 41, 96, 0.4);
+      border: 1px solid #655639;
+      backdrop-filter: blur(14px);
+      transition: all 0.35s ease;
+    }
+
+    .card-premium:hover {
+      border-color: #c4a446;
+      background: rgba(17, 41, 96, 0.65);
+      transform: translateY(-4px);
+    }
+
+    .text-glow {
+      text-shadow: 0 0 25px rgba(196, 164, 70, 0.25);
+    }
+
+    .accent-gradient {
+      background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #fbc400 45%,
+        #c4a446 100%
+      );
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #081d52;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #655639;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #c4a446;
+    }
+
+    @keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+        filter: blur(12px);
+        transform: scale(1.2);
+      }
+
+      100% {
+        letter-spacing: 0.1em;
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+      }
+    }
+
+    @keyframes line-grow-x {
+      0% {
+        width: 0;
+        opacity: 0;
+      }
+
+      100% {
+        width: 80px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-reveal-sub {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      100% {
+        opacity: 0.5;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fade-out-exit {
+      0% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(1.1);
+        filter: blur(10px);
+      }
+    }
+
+    @keyframes float-ai {
+      0%,
+      100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-15px) scale(1.02);
+      }
+    }
+
+    @keyframes fadeInScale {
+      from {
+        opacity: 0;
+        transform: scale(0.98);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .animate-tracking-expand {
+      animation: tracking-in-expand 1.2s
+        cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+    }
+
+    .animate-line-grow {
+      animation: line-grow-x 1s
+        cubic-bezier(0.645, 0.045, 0.355, 1)
+        0.5s forwards;
+    }
+
+    .animate-slide-sub {
+      animation: slide-reveal-sub 1s ease-out 0.8s forwards;
+    }
+
+    .loader-exit {
+      animation: fade-out-exit 0.8s
+        cubic-bezier(0.77, 0, 0.175, 1)
+        forwards;
+    }
+
+    .animate-float-ai {
+      animation: float-ai 5s ease-in-out infinite;
+    }
+
+    .animate-premium {
+      animation: fadeInScale 0.8s ease-out forwards;
+    }
+
+    .no-scroll {
+      overflow: hidden;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+      "@emailjs/browser": "https://esm.sh/@emailjs/browser@^4.4.1",
+      "react/": "https://esm.sh/react@^19.2.4/",
+      "react": "https://esm.sh/react@^19.2.4",
+      "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="/index.css" />
+</head>
+
+<body class="selection:bg-brand-primary selection:text-white">
+
+  <div class="premium-bg"></div>
+
+  <div id="root"></div>
+
+  <script type="module" src="./index.tsx"></script>
+
+</body>
+
+</html>

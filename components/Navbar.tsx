@@ -77,16 +77,6 @@ className={`fixed top-6 left-1/2 -translate-x-1/2 z-[110] w-[95%] max-w-6xl px-4
       </button>
     ))}
 
-    <a
-      href={cvUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs font-bold tracking-wide text-white hover:text-brand-primary transition-all flex items-center gap-2"
-    >
-      Founder Profile
-      <Icons.FileText />
-    </a>
-
   </div>
 
   <div className="flex items-center gap-2 sm:gap-3">

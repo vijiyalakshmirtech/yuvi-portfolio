@@ -117,16 +117,6 @@ const Hero: React.FC = () => {
             Explore My Work
           </button>
 
-          <a
-            href={cvUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-4 border border-brand-border text-white font-bold text-sm rounded-xl hover:bg-white/5 transition-all flex items-center justify-center gap-2"
-          >
-            Founder Profile
-            <Icons.FileText />
-          </a>
-
           <button
             onClick={() =>
               document

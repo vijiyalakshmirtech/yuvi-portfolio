@@ -57,7 +57,7 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   
   const githubUrl = "https://github.com/muhammadibrahimshujasheikh12";
-  const linkedinUrl = "https://www.linkedin.com/in/muhammad-ibrahim-73484a3a5/";
+  const linkedinUrl = "https://www.linkedin.com/company/seyonix";
   if (isLoading) {
     return <WelcomeLoader onComplete={() => setIsLoading(false)} />;
   }
@@ -94,9 +94,14 @@ const App: React.FC = () => {
                 <div className="inline-block px-3 py-1 rounded bg-brand-primary/10 text-brand-primary text-[10px] font-bold tracking-widest uppercase mb-6">Featured Work</div>
                 <h2 className="font-display font-bold text-5xl md:text-6xl text-white tracking-tight">Case Studies & Projects.</h2>
               </div>
-              <a href={githubUrl} target="_blank" className="text-sm font-bold text-neutral-500 hover:text-white transition-all flex items-center gap-2">
-                View all on GitHub <Icons.Github />
-              </a>
+<a
+  href={linkedinUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-neutral-700 hover:text-white transition-all"
+>
+  <Icons.Linkedin />
+</a>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

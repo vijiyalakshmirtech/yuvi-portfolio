@@ -1,151 +1,190 @@
-# YUVARAJ RAMALINGAM | Founder Portfolio & AI Growth Intelligence
+import React from 'react';
+import { Project, Experience, Skill, Certification } from './types';
 
-A premium founder portfolio showcasing the journey, expertise, philosophy, and digital capabilities of Yuvaraj Ramalingam.
+export const PROJECTS: Project[] = [
+  {
+    id: 'p1',
+    title: 'SEYONIX AI Growth Studio',
+    description: 'AI-powered advertising, branding, and digital growth solutions for modern businesses.',
+    longDescription: 'SEYONIX helps businesses leverage AI-powered content creation, digital marketing, branding, and business growth systems.',
+    tags: ['AI Marketing', 'Branding', 'Digital Growth'],
+    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000',
+    featured: true,
+    demoUrl: '#'
+  },
+  {
+    id: 'p2',
+    title: 'AI Ad Video Campaigns',
+    description: 'Creating AI-powered promotional videos for local businesses.',
+    longDescription: 'Strategic AI video production designed to increase visibility, engagement, and conversions.',
+    tags: ['AI Video', 'Marketing', 'Content Creation'],
+    imageUrl: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80&w=2000',
+    featured: true,
+    demoUrl: '#'
+  },
+  {
+    id: 'p3',
+    title: 'Business Branding Projects',
+    description: 'Helping businesses establish stronger brand positioning.',
+    longDescription: 'Brand identity development, positioning strategy, visual communication, and digital presence enhancement.',
+    tags: ['Branding', 'Positioning', 'Growth'],
+    imageUrl: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2000',
+    featured: true,
+    demoUrl: '#'
+  },
+  {
+    id: 'p4',
+    title: 'Website Development Solutions',
+    description: 'Professional websites and landing pages for business growth.',
+    longDescription: 'Creating digital platforms that strengthen credibility and support customer acquisition.',
+    tags: ['Website', 'Landing Page', 'Digital'],
+    imageUrl: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=2000',
+    featured: true,
+    demoUrl: '#'
+  }
+];
 
-This portfolio represents the intersection of technology, branding, digital marketing, artificial intelligence, creativity, and entrepreneurship.
+export const EXPERIENCES: Experience[] = [
+  {
+    id: 'e1',
+    company: 'SEYONIX',
+    role: 'Founder & Digital Growth Strategist',
+    period: '2025 - Present',
+    description: [
+      'Helping businesses leverage AI, branding, marketing and technology.',
+      'Building growth systems for visibility, engagement and business expansion.',
+      'Providing digital marketing, content creation and consulting solutions.'
+    ],
+    technologies: ['Leadership', 'Digital Growth', 'Brand Strategy', 'Business Development']
+  },
+  {
+    id: 'e2',
+    company: 'Independent Consulting',
+    role: 'AI Creative Specialist',
+    period: '2024 - Present',
+    description: [
+      'Creating AI-powered advertising content and visual campaigns.',
+      'Helping businesses adopt AI for content production and marketing efficiency.',
+      'Developing creative automation workflows.'
+    ],
+    technologies: ['AI Video', 'AI Images', 'Prompt Engineering', 'Automation']
+  },
+  {
+    id: 'e3',
+    company: 'Digital Marketing',
+    role: 'Digital Marketing Strategist',
+    period: '2024 - Present',
+    description: [
+      'Improving business visibility through digital marketing initiatives.',
+      'Creating content strategies focused on growth and engagement.',
+      'Supporting customer acquisition and brand awareness.'
+    ],
+    technologies: ['Marketing', 'Lead Generation', 'SEO', 'Content Strategy']
+  }
+];
+export const CERTIFICATIONS: Certification[] = [
+  {
+    id: 'c1',
+    title: 'Digital Marketing Strategy',
+    issuer: 'Professional Development',
+    date: 'Completed',
+    description: 'Expertise in digital marketing, branding, and growth strategy.',
+    status: 'completed'
+  },
+  {
+    id: 'c2',
+    title: 'AI Content Creation',
+    issuer: 'Professional Development',
+    date: 'Completed',
+    description: 'AI-powered content creation, image generation and video production.',
+    status: 'completed'
+  },
+  {
+    id: 'c3',
+    title: 'Website Development',
+    issuer: 'Information Technology',
+    date: 'Completed',
+    description: 'Professional website development and landing page creation.',
+    status: 'completed'
+  },
+  {
+    id: 'c4',
+    title: 'Advanced AI Growth Systems',
+    issuer: 'Future Specialization',
+    date: 'Upcoming',
+    description: 'Advanced AI marketing and business automation systems.',
+    status: 'upcoming'
+  }
+];
 
----
+export const SKILLS: Skill[] = [
+  { name: 'Digital Marketing Strategy', category: 'marketing' },
+  { name: 'Social Media Marketing', category: 'marketing' },
+  { name: 'Lead Generation', category: 'marketing' },
+  { name: 'Brand Positioning', category: 'marketing' },
+  { name: 'Content Marketing', category: 'marketing' },
+  { name: 'Google Business Profile Optimization', category: 'marketing' },
 
-## ABOUT
+  { name: 'AI Video Production', category: 'ai' },
+  { name: 'AI Image Generation', category: 'ai' },
+  { name: 'Prompt Engineering', category: 'ai' },
+  { name: 'AI Content Creation', category: 'ai' },
+  { name: 'Creative Automation', category: 'ai' },
 
-Yuvaraj Ramalingam is an Entrepreneur, Digital Growth Strategist, and AI Creative Specialist from Tamil Nadu, India.
+  { name: 'Website Development', category: 'frontend' },
+  { name: 'Landing Page Development', category: 'frontend' },
+  { name: 'WordPress', category: 'frontend' },
 
-With a Bachelor of Technology in Information Technology, he combines technology, creativity, branding, marketing, and business strategy to help organizations improve visibility, strengthen positioning, and accelerate growth.
+  { name: 'Canva', category: 'creative' },
+  { name: 'Video Editing', category: 'creative' },
+  { name: 'Brand Design', category: 'creative' },
+  { name: 'Creative Direction', category: 'creative' },
 
-His work focuses on helping businesses leverage modern technologies and digital systems to remain competitive in an increasingly digital world.
+  { name: 'Domain Management', category: 'tools' },
+  { name: 'Hosting Management', category: 'tools' },
 
----
+  { name: 'Strategic Thinking', category: 'personal' },
+  { name: 'Problem Solving', category: 'personal' },
+  { name: 'Entrepreneurship', category: 'personal' },
+  { name: 'Business Development', category: 'personal' },
+  { name: 'Continuous Learning', category: 'personal' }
+];
 
-## CORE EXPERTISE
-
-### Digital Marketing Strategy
-
-Building scalable growth frameworks that help businesses attract, engage, and convert customers.
-
-### Branding & Positioning
-
-Creating meaningful brand identities that build trust, recognition, and long-term value.
-
-### Artificial Intelligence Solutions
-
-Leveraging AI technologies to improve content creation, marketing efficiency, and business productivity.
-
-### Website Development
-
-Designing professional websites and landing pages that strengthen credibility and support growth.
-
-### AI Content Creation
-
-Creating AI-powered advertisements, promotional videos, visual campaigns, and marketing assets.
-
-### Local Business Growth
-
-Helping businesses improve visibility through Google Business Profile optimization, Local SEO, and digital marketing initiatives.
-
----
-
-## INDUSTRIES SERVED
-
-* Retail Businesses
-* Jewellery Stores
-* Fashion Brands
-* Beauty & Wellness Businesses
-* Educational Institutions
-* Restaurants & Cafes
-* Local Service Businesses
-* Spiritual Organizations
-* Startups
-* Personal Brands
-
----
-
-## TECHNOLOGY & DIGITAL EXPERTISE
-
-### Marketing
-
-* Digital Marketing Strategy
-* Social Media Marketing
-* Lead Generation
-* Brand Positioning
-* Content Marketing
-* Google Business Profile Optimization
-
-### Artificial Intelligence
-
-* AI Video Production
-* AI Image Generation
-* AI Content Creation
-* Prompt Engineering
-* Creative Automation
-
-### Web Technologies
-
-* Website Development
-* WordPress
-* Domain Management
-* Hosting Management
-* Landing Page Development
-* SEO Foundations
-
-### Creative Tools
-
-* Canva
-* AI Design Platforms
-* Video Production Tools
-* Creative Workflow Systems
-
----
-
-## LEADERSHIP PHILOSOPHY
-
-Technology creates opportunities.
-
-Creativity attracts attention.
-
-Strategy creates direction.
-
-Execution creates results.
-
-When all four work together, growth becomes predictable.
-
----
-
-## VISION
-
-To become a recognized leader in digital transformation, AI-powered business solutions, and modern brand development by helping businesses leverage technology to unlock sustainable growth.
-
----
-
-## MISSION
-
-To empower entrepreneurs, businesses, and organizations with innovative digital strategies that combine creativity, technology, and measurable business impact.
-
----
-
-## PERSONAL BRAND STATEMENT
-
-"I build growth systems that help businesses thrive in the digital era."
-
-My goal is not simply to create websites, advertisements, or content.
-
-My goal is to create business value.
-
-Every project I undertake is driven by a commitment to helping businesses become more visible, more efficient, and more competitive in an increasingly digital world.
-
----
-
-## CONTACT
-
-Yuvaraj Ramalingam
-
-Founder | Entrepreneur | Digital Growth Strategist | AI Creative Specialist
-
-Salem, Tamil Nadu, India
-
-Email:
-[hello@seyonix.in](mailto:hello@seyonix.in)
-
----
-
-© 2026 Yuvaraj Ramalingam. All Rights Reserved.
-
+export const Icons = {
+  Github: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+  ),
+  Linkedin: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+  ),
+  Mail: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+  ),
+  Youtube: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.11 1 12 1 12s0 3.89.46 5.58a2.78 2.78 0 0 0 1.94 2c1.72.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.89 23 12 23 12s0-3.89-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+  ),
+  ExternalLink: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+  ),
+  Award: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+  ),
+  Bot: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+  ),
+  Send: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+  ),
+  Fiverr: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.5 13h-2.1c-.2 0-.3.1-.3.3v2.4c0 .2.1.3.3.3h2.1c.2 0 .3-.1.3-.3v-2.4c0-.2-.1-.3-.3-.3z"/><path d="M11 13h-2.1c-.2 0-.3.1-.3.3v2.4c0 .2.1.3.3.3h2.1c.2 0 .3-.1.3-.3v-2.4c0-.2-.1-.3-.3-.3z"/><path d="M2.5 13h2.1c.2 0 .3.1.3.3v2.4c0 .2-.1.3-.3.3h-2.1c-.2 0-.3-.1-.3-.3v-2.4c0-.2.1-.3.3-.3z"/><path d="M11 6h-2.1c-.2 0-.3.1-.3.3v2.4c0 .2.1.3.3.3h2.1c.2 0 .3-.1.3-.3v-2.4c0-.2-.1-.3-.3-.3z"/><path d="M2.5 6h2.1c.2 0 .3.1.3.3v2.4c0 .2-.1.3-.3.3h-2.1c-.2 0-.3-.1-.3-.3v-2.4c0-.2.1-.3.3-.3z"/></svg>
+  ),
+  Upwork: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18.5 6c-2.5 0-4.5 2-4.5 4.5v3.5c0 1.1-.9 2-2 2s-2-.9-2-2v-3.5c0-1.1-.9-2-2-2S6 9.4 6 10.5v3.5c0 3 2.5 5.5 5.5 5.5s5.5-2.5 5.5-5.5v-3.5c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5v3.5c0 .3.2.5.5.5s.5-.2.5-.5v-3.5C21 8 19.9 6 18.5 6z"/></svg>
+  ),
+  Scrimba: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12a4 4 0 0 1 8 0"/><path d="M12 12v4"/></svg>
+  ),
+  FileText: () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
+  )
+};
